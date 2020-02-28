@@ -90,6 +90,11 @@ a {
 }
 
 
+.nav-container {
+	display:flex;
+	justify-content: space-evenly;
+}
+
 footer p {
 	padding: 4px;
 }
@@ -101,6 +106,16 @@ nav {
 	align-items: center;	
 }
 
+
+.top-nav {
+	width : 70%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.second-top-nav {
+	width: 30%;
+}
 nav a {
 	color: grey;
 	text-align: center;
@@ -122,6 +137,11 @@ hr {
 	margin: 2%;
 }
 
+.logo {
+	margin-left: 50%;
+}
+
+
 .info-image{
 	background: url('https://github.com/LambdaSchool/User-Interface/blob/master/great-idea-website/img/mid-page-accent.jpg?raw=true" alt="Image of code snippets across the screen"');
 	background-repeat: no-repeat;
@@ -142,21 +162,30 @@ hr {
 
 	.logo {
 	margin-bottom: 50px;
-	margin-right: 25%;
 	}
 
 	.button-section {
 		margin-bottom: -50%;
 	}
 
+	.nav-container{
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		text-align: center;
+
+	}
+
 	.top-nav {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 100%;
 		
 	}
 
 @media (max-width: 500px) {
-	nav {
+	.top-nav {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -167,18 +196,18 @@ hr {
 	}
 
 	.top-nav{
-		border-bottom: 2px solid black;
+		border-bottom: 1px solid black;
 	}
 	nav a{
-		border-bottom: 2px solid black;
+		border-bottom: 1px solid black;
 		padding-bottom: 20px;
 		width: 100vw;
 		
 	}
 	.logo{
-		border-bottom: 2px solid black;
 		margin-bottom: 15px;
 		margin-top: -20px;
+		
 
 	}
 	
@@ -187,7 +216,7 @@ hr {
 	}
 
 	.services-tag{
-		border-top: 2px solid black;
+		border-top: 1px solid black;
 	}
 	
 	.infoa {
